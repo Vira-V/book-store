@@ -1,14 +1,9 @@
 import './App.css';
+import { Subscription } from './components/Subscription/Subscription';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          My code.
-        </p>
-      </header>
-    </div>
+        <Subscription />
   );
 }
 

@@ -7,24 +7,28 @@ export const data = {
   title: "Read our many blogs",
   blogs: [
     {
+      id: 1,
       title: "Learn about this week's top author",
       text: "Jump start your book reading by quickly checking through the popular book categories...",
       image: image1,
       description: "The man with a cup",
     },
     {
+      id: 2,
       title: "Why we celebrate readers",
       text: "Jump start your book reading by quickly check through the popular book categories...",
       image: image2,
       description: "A girl and two men with drinks",
     },
     {
+      id: 3,
       title: "Toddlers can also read",
       text: "Jump start your book reading by quickly check through the popular book categories...",
       image: image3,
       description: "A toddler is laughing",
     },
     {
+      id: 4,
       title: "Get started on your game",
       text: "Jump start your book reading by quickly check through the popular book categories...",
       image: image4,

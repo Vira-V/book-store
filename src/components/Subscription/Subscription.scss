@@ -1,7 +1,7 @@
 $primaryColor: #111;
 $secondaryColor: #7a7a7a;
 $accentColor: #ed553b;
-$borderColor: #6f6f6f;
+$borderColor: #e0e0e0;
 $backgroundColor: #f7fcfc;
 
 .subscription-container {
@@ -42,7 +42,7 @@ $backgroundColor: #f7fcfc;
 
   &__form {
     margin-top: 1.875rem;
-    border-bottom: 1px solid $borderColor;
+    border-bottom: 1px solid #6F6F6F;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -52,7 +52,7 @@ $backgroundColor: #f7fcfc;
       border: none;
       background: none;
       outline: none;
-      margin-bottom: 0.9375rem;
+      margin-bottom: 0.5rem;
       padding: 0.625rem;
 
       &::placeholder {

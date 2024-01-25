@@ -21,23 +21,24 @@ export const Subscription = () => {
   return (
     <div className="subscription-container">
       <div className="subscription">
-        <h2 className="subsription__title">Subscribe to our newsletter</h2>
+        <h2 className="subscription__title">Subscribe to our newsletter</h2>
       </div>
       <div className="details">
         <p className="details__text">Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra hac.</p>
-        <form>
-          <label htmlFor="details__email">Email:</label>
+        <form className="details__form">
+          <label htmlFor="details__email"></label>
           <input
             type="email"
             id="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email address here"
             required
           />
-          <button type="button" onClick={subscribe}>
-            Send
-          </button>
+          <a href="/" className="button" onClick={subscribe}>
+              <span className="button__text">Send</span>
+            </a>
         </form>
       </div>
     </div>

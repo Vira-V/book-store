@@ -9,9 +9,11 @@ import {
   faTwitter,
   faBloggerB,
 } from "@fortawesome/free-brands-svg-icons";
+import { MiddleHeader } from "../Middle-header/MiddleHeader";
 
 export const Header = () => {
   return (
+    <>
     <div className="top-header">
       <div className="top-header__phone">
         <FontAwesomeIcon icon={faPhone} className="top-header__phone-icon" />
@@ -37,5 +39,9 @@ export const Header = () => {
         </a>
       </div>
     </div>
+
+    <MiddleHeader />
+    
+    </>
   );
 };

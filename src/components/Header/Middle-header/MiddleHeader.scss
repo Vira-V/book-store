@@ -1,0 +1,61 @@
+.middle-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 62px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 62px;
+    width: calc(100% - 124px);
+    height: 1px;
+    color: #e0e0e0;
+  }
+
+  &__avatar {
+    width: 86px;
+    height: 86px;
+    border-radius: 43px;
+    background: #c4c4c4;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 35px;
+
+    &-icon {
+      color: #393280;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.68px;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -17.5px;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 2px;
+        background: #d1d1d1;
+      }
+    }
+
+    &-text {
+      margin-left: 10px;
+    }
+
+    &-icon:last-child::before {
+      content: none;
+    }
+  }
+}

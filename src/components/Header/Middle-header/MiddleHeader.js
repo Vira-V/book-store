@@ -15,7 +15,7 @@ export const MiddleHeader = () => {
           className="middle-header__search-input"
           placeholder="Search Books"
         />
-        <FontAwesomeIcon icon={faSearch} className="section__search--icon" />
+        <FontAwesomeIcon icon={faSearch} className="middle-header__search-icon" />
       </div>
       <div className="middle-header__menu">
         <a href="/account" className="middle-header__menu-icon">

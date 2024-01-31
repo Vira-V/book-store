@@ -3,37 +3,74 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 62px;
+  padding: 1.125rem 3.875rem;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 10px;
-    left: 62px;
-    width: calc(100% - 124px);
-    height: 1px;
-    color: #e0e0e0;
+    bottom: 0.625rem;
+    left: 3.875rem;
+    width: calc(100% - 7.75rem);
+    height: 0.0625rem;
+    background-color: #e0e0e0;
   }
 
   &__avatar {
-    width: 86px;
-    height: 86px;
-    border-radius: 43px;
+    width: 5.375rem;
+    height: 5.375rem;
+    border-radius: 2.6875rem;
     background: #c4c4c4;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    width: 38.625rem;
+    background-color: #f6f6f6;
+    gap: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
+    padding: 0.5rem;
+
+    &-icon {
+      color: #111;
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-right: 0.875rem;
+    }
+
+    &-input {
+      border: none;
+      outline: none;
+      background-color: #f6f6f6;
+      flex-grow: 1;
+      padding: 0.25rem 1.5rem;
+      font-family: Inter;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.105rem;
+      text-transform: capitalize;
+
+      &::placeholder {
+        color: #bcbcbc;
+      }
+    }
   }
 
   &__menu {
     display: flex;
-    gap: 35px;
+    gap: 2.1875rem;
 
     &-icon {
       color: #393280;
       font-family: Inter;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-      letter-spacing: 1.68px;
+      letter-spacing: 0.105rem;
       text-transform: uppercase;
       text-decoration: none;
       position: relative;
@@ -42,16 +79,16 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: -17.5px;
+        right: -1.09375rem;
         transform: translateY(-50%);
-        height: 15px;
-        width: 2px;
+        height: 0.9375rem;
+        width: 0.125rem;
         background: #d1d1d1;
       }
     }
 
     &-text {
-      margin-left: 10px;
+      margin-left: 0.625rem;
     }
 
     &-icon:last-child::before {

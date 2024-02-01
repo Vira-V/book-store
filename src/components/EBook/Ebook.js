@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Ebook.scss";
+import ebookImage from "../../images/ebook.jpg";
 
 export const Ebook = () => {
   const [email, setEmail] = useState("");
@@ -32,7 +33,7 @@ export const Ebook = () => {
           amet, consectetur adipiscing elit.
         </p>
         <form className="ebook__form">
-          <label htmlFor="ebook__email"></label>
+          <label htmlFor="email"></label>
           <input
             type="email"
             id="email"
@@ -47,7 +48,9 @@ export const Ebook = () => {
           </a>
         </form>
       </div>
-      <div className="image"></div>
+      <div className="image">
+      <img src={ebookImage} alt="Ebook Cover" />
+      </div>
     </div>
   );
 };

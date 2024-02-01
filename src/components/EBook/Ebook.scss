@@ -1,0 +1,85 @@
+.ebook-container {
+  display: flex;
+  background: linear-gradient(94deg, #fcecec 1.85%, #f6fffe 64.13%);
+}
+
+.ebook {
+  text-align: left;
+  padding: 96px 62px;
+
+  &__category,
+  &__title,
+  &__text {
+    font-family: "Inter", sans-serif;
+  }
+
+  &__category {
+    position: relative;
+    padding-left: 46px;
+    color: #ed553b;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 33px;
+      height: 2px;
+      background-color: #ed553b;
+    }
+  }
+
+  &__title {
+    color: #38426c;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0.9px;
+  }
+
+  &__text {
+    color: rgba(57, 50, 128, 0.7);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  &__form {
+    margin-top: 1.875rem;
+    display: flex;
+
+    input {
+      width: calc(100% - 10px);
+      border: none;
+      border-radius: 10px 0 0 10px;
+      background: #fff;
+      outline: none;
+      padding: 23px 20px;
+
+      &::placeholder {
+        color: #bcbcbc;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.68px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 0 10px 10px 0;
+    background: #ed553b;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 43px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+}

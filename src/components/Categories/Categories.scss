@@ -1,0 +1,106 @@
+.categories-container {
+  padding: 30px 60px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 137%;
+    color: #393280;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 178%;
+    color: rgba(57, 50, 128, 0.7);
+    width: 50%;
+  }
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.gallery {
+  width: 416px;
+
+  &__image img {
+    height: 247px;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: #393280;
+    padding-top: 20px;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: rgba(57, 50, 128, 0.7);
+  }
+}
+
+.view-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #393280;
+  border-radius: 7px;
+  width: 177px;
+  margin: 0 auto;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s; // Added transition for smooth animation
+
+  &:hover {
+    background-color: #393280;
+    &::after {
+      filter: invert(1);
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../images/icons/arrow.png");
+    width: 13px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 10px; // Adjust the right distance as needed
+    transition: filter 0.3s; // Added transition for smooth color change
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #393280;
+    padding: 8px 20px;
+
+    &:hover {
+      filter: invert(1);
+    }
+  }
+}

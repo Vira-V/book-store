@@ -7,16 +7,19 @@ export const Categories = () => {
   return (
     <div className="categories-container">
       <div className="category">
-        <span className="category__subtitle">Categories</span>
-        <h3 className="category__title">Explore our Top Categories</h3>
-        <p className="category__text">
+        <div>
+          <span className="ebook__category">Categories</span>
+          <h3 className="category__title">Explore our Top Categories</h3>
+        </div>
+
+        <div className="category__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
           feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut
           magna velit eleifend. Amet, quis urna, a eu.Lorem ipsum dolor sit
           amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum
           ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat
           amet, libero ipsum..
-        </p>
+        </div>
       </div>
       <div className="gallery-container">
         <div className="gallery">
@@ -53,8 +56,8 @@ export const Categories = () => {
           </p>
         </div>
       </div>
-      <a href="/" className="button">
-        <span className="button__text">View more</span>
+      <a href="/" className="view-button">
+        <span className="view-button__text">View more</span>
       </a>
     </div>
   );

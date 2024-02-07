@@ -4,11 +4,13 @@ import { data } from './data';
 import { Blog } from './components/Blog/Blog';
 import { Header } from './components/Header/Top-header/Header';
 import { Ebook } from './components/EBook/Ebook';
+import { Categories } from './components/Categories/Categories';
 
 function App() {
   return (
     <>
       <Header />
+      <Categories />
       <Ebook />
       <Subscription />
       <Blog title={data.title} blogs={data.blogs} />

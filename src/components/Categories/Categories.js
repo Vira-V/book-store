@@ -3,13 +3,20 @@ import educationBook from "../../images/higher-education.jpg";
 import managementBook from "../../images/management-books.jpg";
 import engineeringBook from "../../images/engineering-books.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 export const Categories = () => {
   return (
     <div className="categories-container">
       <div className="category">
-        <div>
+        <div className="category__block">
           <span className="ebook__category">Categories</span>
           <h3 className="category__title">Explore our Top Categories</h3>
+          <div className="category__buttons">
+            <FontAwesomeIcon icon={faArrowLeft} className="left-arrow" />
+            <FontAwesomeIcon icon={faArrowRight} className="right-arrow" />
+          </div>
         </div>
 
         <div className="category__text">

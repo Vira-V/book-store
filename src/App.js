@@ -5,11 +5,13 @@ import { Blog } from './components/Blog/Blog';
 import { Header } from './components/Header/Top-header/Header';
 import { Ebook } from './components/EBook/Ebook';
 import { Categories } from './components/Categories/Categories';
+import { Introduce } from './components/Introduce/Introduce';
 
 function App() {
   return (
     <>
       <Header />
+      <Introduce />
       <Categories />
       <Ebook />
       <Subscription />

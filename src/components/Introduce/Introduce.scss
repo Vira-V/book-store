@@ -1,0 +1,47 @@
+.introduce-container {
+  display: flex;
+  padding: 20px 0 20px 50px;
+  gap: 60px;
+  background: linear-gradient(
+    47deg,
+    #ffece5 0%,
+    #f5fffe 21.84%,
+    #fff 54.58%,
+    #fff 99.86%
+  );
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 145%;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #393280;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    color: rgba(57, 50, 128, 0.8);
+  }
+
+  &__button {
+    margin: 0;
+  }
+}
+
+.introduce-image img {
+  height: 650px;
+}

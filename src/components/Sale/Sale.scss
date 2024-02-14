@@ -1,0 +1,29 @@
+.sale-container {
+    display: flex;
+    background: #fcebea;
+    border-radius: 20px;
+    margin: 40px;
+    padding: 50px;
+}
+
+.sale {
+    padding: 10px;
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 147%;
+        color: #463c74;
+    }
+
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 178%;
+        letter-spacing: 0.05em;
+        color: #393280;
+        padding-top: 20px;
+    }
+}

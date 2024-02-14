@@ -23,10 +23,10 @@ export const Subscription = () => {
       <div className="subscription">
         <h2 className="subscription__title">Subscribe to our newsletter</h2>
       </div>
-      <div className="details">
-        <p className="details__text">Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra hac.</p>
-        <form className="details__form">
-          <label htmlFor="details__email"></label>
+      <div className="subscription-details">
+        <p className="subscription-details__text">Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra hac.</p>
+        <form className="subscription-details__form">
+          <label htmlFor="subscription-details__email"></label>
           <input
             type="email"
             id="email"

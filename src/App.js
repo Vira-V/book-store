@@ -9,6 +9,7 @@ import { Introduce } from './components/Introduce/Introduce';
 import { FeaturedBook } from './components/FeaturedBook/FeaturedBook';
 import { ReleaseBook } from './components/ReleaseBooks/ReleaseBook';
 import { books } from './books';
+import { Sale } from './components/Sale/Sale';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Categories />
       <Ebook />
       <ReleaseBook books={books}/>
+      <Sale />
       <FeaturedBook />
       <Subscription />
       <Blog title={data.title} blogs={data.blogs} />

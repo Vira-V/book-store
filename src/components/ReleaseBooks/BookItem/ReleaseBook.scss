@@ -1,0 +1,64 @@
+.release {
+  width: 326px;
+  align-items: center;
+  position: relative;
+  padding: 40px 0;
+
+  &__image {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border: 1px solid #eae8df;
+    width: 326px;
+    height: 437px;
+    position: relative;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #393280;
+    padding-top: 10px;
+  }
+
+  &__author {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #888;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  &__price {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #ed553b;
+    padding-top: 10px;
+  }
+
+  &__button {
+    background: #ed553b;
+    padding: 10px 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 60%;
+    width: 90%;
+    left: 5%;
+  }
+}

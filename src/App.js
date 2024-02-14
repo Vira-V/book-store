@@ -7,7 +7,7 @@ import { Ebook } from './components/EBook/Ebook';
 import { Categories } from './components/Categories/Categories';
 import { Introduce } from './components/Introduce/Introduce';
 import { FeaturedBook } from './components/FeaturedBook/FeaturedBook';
-import { ReleaseBook } from './components/ReleaseBooks/ReleaseBook';
+import { ReleaseBook } from './components/ReleaseBooks/BookItem/ReleaseBook';
 
 function App() {
   return (

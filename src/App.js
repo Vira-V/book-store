@@ -7,7 +7,8 @@ import { Ebook } from './components/EBook/Ebook';
 import { Categories } from './components/Categories/Categories';
 import { Introduce } from './components/Introduce/Introduce';
 import { FeaturedBook } from './components/FeaturedBook/FeaturedBook';
-import { ReleaseBook } from './components/ReleaseBooks/BookItem/ReleaseBook';
+import { ReleaseBook } from './components/ReleaseBooks/ReleaseBook';
+import { books } from './books';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Introduce />
       <Categories />
       <Ebook />
-      <ReleaseBook />
+      <ReleaseBook books={books}/>
       <FeaturedBook />
       <Subscription />
       <Blog title={data.title} blogs={data.blogs} />

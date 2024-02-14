@@ -1,3 +1,9 @@
+.release-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
 .release {
   width: 326px;
   align-items: center;
@@ -20,7 +26,7 @@
     text-transform: capitalize;
     text-align: center;
     color: #393280;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   &__author {
@@ -57,8 +63,14 @@
     color: #fff;
     text-decoration: none;
     position: absolute;
-    top: 60%;
+    top: 50%;
     width: 90%;
     left: 5%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

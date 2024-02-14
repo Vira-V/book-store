@@ -1,62 +1,115 @@
+.new-realise-subtitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7a7a7a;
+  padding-top: 2.5rem;
+}
+
+.new-realise-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #393280;
+  padding-top: 1.25rem;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background-color: #e0e0e0;
+    top: 66%;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    &::before,
+    &::after {
+      opacity: 0;
+    }
+  }
+}
+
 .release-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid #e0e0e0;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .release {
-  width: 326px;
+  width: 20.375rem;
   align-items: center;
   position: relative;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 
   &__image {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.15);
     background: #fff;
     border: 1px solid #eae8df;
-    width: 326px;
-    height: 437px;
+    width: 20.375rem;
+    height: 27.3125rem;
     position: relative;
   }
 
   &__title {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-transform: capitalize;
     text-align: center;
     color: #393280;
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
 
   &__author {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #888;
-    padding-top: 10px;
+    padding-top: 0.625rem;
     text-align: center;
   }
 
   &__price {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
     color: #ed553b;
-    padding-top: 10px;
+    padding-top: 0.625rem;
   }
 
   &__button {
     background: #ed553b;
-    padding: 10px 30px;
+    padding: 0.75rem 0;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     text-align: center;

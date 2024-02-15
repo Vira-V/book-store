@@ -3,7 +3,7 @@ import saleImage from "../../images/sale.png";
 import { CountdownTimer } from "../Timer/CountdownTimer";
 
 export const Sale = () => {
-    const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+    const THREE_DAYS_IN_MS = 768 * 24 * 60 * 60 * 1000;
     const NOW_IN_MS = new Date().getTime();
   
     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;

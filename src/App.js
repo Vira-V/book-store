@@ -19,9 +19,9 @@ function App() {
       <Categories />
       <Ebook />
       <ReleaseBook books={books}/>
-      <Sale />
       <FeaturedBook />
-      <Subscription />
+      <Sale />
+      <Subscription />     
       <Blog title={data.title} blogs={data.blogs} />
     </>
   );

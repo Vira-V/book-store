@@ -10,6 +10,7 @@ import { FeaturedBook } from './components/FeaturedBook/FeaturedBook';
 import { ReleaseBook } from './components/ReleaseBooks/ReleaseBook';
 import { books } from './books';
 import { Sale } from './components/Sale/Sale';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Sale />
       <Subscription />     
       <Blog title={data.title} blogs={data.blogs} />
+      <Footer />
     </>
   );
 }

@@ -22,6 +22,7 @@ export const Footer = () => {
 
   return (
     <footer className="footer-container">
+      <div className="footer-container__information">
       <div className="footer-info">
         <div className="footer-info__image">
           <img src={footerLogo} alt="Logo" />
@@ -83,6 +84,7 @@ export const Footer = () => {
           <div className="footer-news__image">
             <img src={footerNews2} alt="Girls are working on the desk" />
           </div>
+          
           <div className="footer-news__content">
             <h6 className="footer-news__title">Nostrud exercitation</h6>
             <p className="footer-news__text">
@@ -92,6 +94,7 @@ export const Footer = () => {
             <p className="footer-news__date">15 April 2022</p>
           </div>
         </article>
+      </div>
       </div>
 
       <div className="footer__author">

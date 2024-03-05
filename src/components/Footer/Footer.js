@@ -1,5 +1,7 @@
 import "./Footer.scss";
 import footerLogo from "../../images/footer_logo.png";
+import footerNews1 from "../../images/news1.png";
+import footerNews2 from "../../images/news2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -60,6 +62,45 @@ export const Footer = () => {
             <li key={menuItem}>{menuItem}</li>
           ))}
         </ul>
+      </div>
+
+      <div className="footer-news">
+        <h5 className="footer-menu__title">Latest news</h5>
+        <article className="footer-news__article">
+          <div className="footer-news__image">
+            <img src={footerNews1} alt="Boy and girl are using the laptop" />
+          </div>
+          <div className="footer-news__content">
+            <h6 className="footer-news__title">Nostrud exercitation</h6>
+            <p className="footer-news__text">
+              Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.{" "}
+            </p>
+            <p className="footer-news__date">15 April 2022</p>
+          </div>
+        </article>
+        <article className="footer-news__article">
+          <div className="footer-news__image">
+            <img src={footerNews2} alt="Girls are working on the desk" />
+          </div>
+          <div className="footer-news__content">
+            <h6 className="footer-news__title">Nostrud exercitation</h6>
+            <p className="footer-news__text">
+              Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.{" "}
+            </p>
+            <p className="footer-news__date">15 April 2022</p>
+          </div>
+        </article>
+      </div>
+
+      <div className="footer__author">
+        <p>© 2022 Arihant. All Rights Reserved.</p>
+        <p>
+          {" "}
+          <span className="footer__author-important">Privacy</span> | Terms of
+          Service
+        </p>
       </div>
     </footer>
   );

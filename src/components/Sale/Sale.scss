@@ -4,6 +4,12 @@
     border-radius: 20px;
     margin: 40px;
     padding: 50px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
 }
 
 .sale {

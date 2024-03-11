@@ -42,10 +42,11 @@ $rem-base: 16px;
 }
 
 .details {
-  padding: 6.25rem 2.5rem;
+  padding: 2.25rem;
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    padding: 6.25rem 2.5rem;
   }
 
   &__title {

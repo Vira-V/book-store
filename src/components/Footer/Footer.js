@@ -15,6 +15,7 @@ export const Footer = () => {
     "Home",
     "About us",
     "Books",
+    "EBooks",
     "New release",
     "Contact us",
     "Blog",
@@ -23,85 +24,108 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-container__information">
-      <div className="footer-info">
-        <div className="footer-info__image">
-          <img src={footerLogo} alt="Logo" />
+        <div className="footer-info">
+          <div className="footer-info__image">
+            <img src={footerLogo} alt="Logo" />
+          </div>
+          <p className="footer-info__text">
+            Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <div className="footer-info__social">
+            <a
+              href="https://www.facebook.com"
+              className="footer-info__social-icon"
+            >
+              <FontAwesomeIcon icon={faFacebookF} />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              className="footer-info__social-icon"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://twitter.com/" className="footer-info__social-icon">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              className="footer-info__social-icon"
+            >
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+          </div>
         </div>
-        <p className="footer-info__text">
-          Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
-        <div className="footer-info__social">
-          <a
-            href="https://www.facebook.com"
-            className="footer-info__social-icon"
-          >
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a
-            href="https://www.instagram.com"
-            className="footer-info__social-icon"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href="https://twitter.com/" className="footer-info__social-icon">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            href="https://www.youtube.com/"
-            className="footer-info__social-icon"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
+
+        <div className="footer-menu">
+          <h5 className="footer-menu__title">Company</h5>
+          <ul className="footer-menu__list">
+            {menuItems.map((menuItem) => (
+              <li key={menuItem}>{menuItem}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="footer-news">
+          <h5 className="footer-menu__title">Latest news</h5>
+          <article className="footer-news__article">
+            <div className="footer-news__image">
+              <img src={footerNews1} alt="Boy and girl are using the laptop" />
+            </div>
+            <div className="footer-news__content">
+              <h6 className="footer-news__title">Nostrud exercitation</h6>
+              <p className="footer-news__text">
+                Nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.{" "}
+              </p>
+              <p className="footer-news__date">
+                {" "}
+                <svg
+                  width="6"
+                  height="6"
+                  viewBox="0 0 6 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="3" cy="3" r="3" fill="#F6D55C" />
+                </svg>{" "}
+                15 April 2022
+              </p>
+            </div>
+          </article>
+          <article className="footer-news__article">
+            <div className="footer-news__image">
+              <img src={footerNews2} alt="Girls are working on the desk" />
+            </div>
+
+            <div className="footer-news__content">
+              <h6 className="footer-news__title">Nostrud exercitation</h6>
+              <p className="footer-news__text">
+                Nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.{" "}
+              </p>
+              <p className="footer-news__date">
+                <svg
+                  width="6"
+                  height="6"
+                  viewBox="0 0 6 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="3" cy="3" r="3" fill="#F6D55C" />
+                </svg>{" "}
+                15 April 2022
+              </p>
+            </div>
+          </article>
         </div>
       </div>
 
-      <div className="footer-menu">
-        <h5 className="footer-menu__title">Company</h5>
-        <ul className="footer-menu__list">
-          {menuItems.map((menuItem) => (
-            <li key={menuItem}>{menuItem}</li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="footer-news">
-        <h5 className="footer-menu__title">Latest news</h5>
-        <article className="footer-news__article">
-          <div className="footer-news__image">
-            <img src={footerNews1} alt="Boy and girl are using the laptop" />
-          </div>
-          <div className="footer-news__content">
-            <h6 className="footer-news__title">Nostrud exercitation</h6>
-            <p className="footer-news__text">
-              Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.{" "}
-            </p>
-            <p className="footer-news__date">15 April 2022</p>
-          </div>
-        </article>
-        <article className="footer-news__article">
-          <div className="footer-news__image">
-            <img src={footerNews2} alt="Girls are working on the desk" />
-          </div>
-          
-          <div className="footer-news__content">
-            <h6 className="footer-news__title">Nostrud exercitation</h6>
-            <p className="footer-news__text">
-              Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.{" "}
-            </p>
-            <p className="footer-news__date">15 April 2022</p>
-          </div>
-        </article>
-      </div>
-      </div>
-
-      <div className="footer__author">
+      <div className="footer-author">
         <p>© 2022 Arihant. All Rights Reserved.</p>
         <p>
           {" "}
-          <span className="footer__author-important">Privacy</span> | Terms of
+          <span className="footer-author__important">Privacy</span> | Terms of
           Service
         </p>
       </div>

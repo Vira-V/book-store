@@ -5,11 +5,8 @@ import image4 from "../src/images/book2.png";
 import image5 from "../src/images/catalog5.png";
 import image6 from "../src/images/book3.png";
 import image7 from "../src/images/book4.png";
-import image8 from "../src/images/catalog8.png";
-import image9 from "../src/images/catalog9.png";
-import image10 from "../src/images/catalog10.png";
 
-export const books = [
+export const catalog = [
   {
     id: 1,
     image: image1,
@@ -61,21 +58,21 @@ export const books = [
   },
   {
     id: 8,
-    image: image8,
+    image: image1,
     title: "The road to recognition",
     author: "Barry Feldman",
     price: "$ 49.00",
   },
   {
     id: 9,
-    image: image9,
+    image: image2,
     title: "The mind connection",
     author: "Joyce Meyer",
     price: "$ 41.00",
   },
   {
     id: 10,
-    image: image10,
+    image: image7,
     title: "Battlefield of the mind",
     author: "Joyce Meyer",
     price: "$ 41.50",
@@ -103,7 +100,7 @@ export const books = [
   },
   {
     id: 14,
-    image: image8,
+    image: image1,
     title: "The road to recognition",
     author: "Barry Feldman",
     price: "$ 49.00",

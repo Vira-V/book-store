@@ -28,13 +28,23 @@ $line-distance: 2rem;
       transition: color 0.3s;
       position: relative;
 
+        &:hover {
+          color: #ed553b;
+        }
+
       &:last-child {
         margin-right: 0;
       }
 
-      &.active,
-      &:hover {
-        color: #ed553b;
+      a {
+        text-decoration: none;
+        color: #111;
+
+        &.active,
+        &:hover,
+        &:active {
+          color: #ed553b;
+        }
       }
 
       &:not(:last-child)::after {

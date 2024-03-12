@@ -1,16 +1,20 @@
-import './App.css';
-import { BookCatalog } from './components/BookCatalog/BookCatalog';
-import { Footer } from './components/Footer/Footer';
-import { Header } from './components/Header/Top-header/Header';
-import { HomePage } from './pages/HomePage/HomePage';
-import { catalog } from './catalog';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Top-header/Header";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { CatalogPage } from "./pages/CatalogPage/CatalogPage";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
 
 function App() {
   return (
     <>
       <Header />
-      <BookCatalog catalog={catalog}/>
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/books" element={<CatalogPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
       <Footer />
     </>
   );

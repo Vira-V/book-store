@@ -1,3 +1,6 @@
+import { catalog } from "../../catalog";
+import { BookCatalog } from "../../components/BookCatalog/BookCatalog";
+
 export const CatalogPage = () => (
-    <h1 className="title">catalog</h1>
+    <BookCatalog catalog={catalog}/>
   )

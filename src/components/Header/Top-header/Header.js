@@ -10,7 +10,6 @@ import {
   faBloggerB,
 } from "@fortawesome/free-brands-svg-icons";
 import { MiddleHeader } from "../Middle-header/MiddleHeader";
-import { MenuHeader } from "../Menu-header/MenuHeader";
 
 export const Header = () => {
   return (
@@ -42,7 +41,6 @@ export const Header = () => {
     </div>
 
     <MiddleHeader />
-    <MenuHeader />
     </>
   );
 };

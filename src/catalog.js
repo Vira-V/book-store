@@ -112,4 +112,11 @@ export const catalog = [
     author: "Arthur Doyle",
     price: "$ 45.00",
   },
+  {
+    id: 16,
+    image: image2,
+    title: "The mind connection",
+    author: "Joyce Meyer",
+    price: "$ 41.00",
+  },
 ];

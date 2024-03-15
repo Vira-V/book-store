@@ -40,7 +40,7 @@ const Pagination = ({
     <ul className={classnames('pagination-container', className)}>
       <li
         key="previous"
-        className={classnames('pagination-item', {
+        className={classnames('pagination-item pagination-arrows', {
           disabled: currentPage === 1,
         })}
         onClick={onPrevious}
@@ -62,7 +62,7 @@ const Pagination = ({
       ))}
       <li
         key="next"
-        className={classnames('pagination-item', {
+        className={classnames('pagination-item pagination-arrows', {
           disabled: currentPage === lastPage,
         })}
         onClick={onNext}

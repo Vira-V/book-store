@@ -14,18 +14,18 @@ export const BookCatalog = ({ catalog }) => {
         </NavLink>
       </div>
 
-      <div className="release-container">
+      <div className="catalog-container">
         {catalog.map((book, id) => (
-          <div key={id} className="release">
+          <div key={id} className="catalog">
             <img
               src={book.image}
-              className="release__image"
+              className="catalog__image"
               alt="Featured Book"
             />
-            <h4 className="release__title">{book.title}</h4>
-            <div className="release__author">{book.author}</div>
-            <div className="release__price">{book.price}</div>
-            <a href="/" className="release__button">
+            <h4 className="catalog__title">{book.title}</h4>
+            <div className="catalog__author">{book.author}</div>
+            <div className="catalog__price">{book.price}</div>
+            <a href="/" className="catalog__button">
               Add to cart
             </a>
           </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { catalog } from "../../catalog";
 import { BookCatalog } from "../../components/BookCatalog/BookCatalog";
 import Pagination from "../../components/Pagination/Pagination";
+import { CartItem } from '../../components/CartItem/CartItem';
 
 export const CatalogPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,6 +19,7 @@ export const CatalogPage = () => {
 
   return (
     <>
+    <CartItem />
       <BookCatalog catalog={displayedBooks} />
       <Pagination
         onPageChange={handlePageSwitch}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MiddleHeader.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faHeart } from "@fortawesome/free-regular-svg-icons";
@@ -23,10 +24,10 @@ export const MiddleHeader = () => {
           <span className="middle-header__menu-text">Account</span>
         </a>
 
-        <a href="/cart" className="middle-header__menu-icon">
+        <Link to="/cart" className="middle-header__menu-icon">
           <FontAwesomeIcon icon={faShoppingBasket} />
           <span className="middle-header__menu-text">Cart:(0$)</span>
-        </a>
+        </Link>
 
         <a href="/wishlist" className="middle-header__menu-icon">
           <FontAwesomeIcon icon={faHeart} />

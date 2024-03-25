@@ -5,6 +5,7 @@ import { Header } from "./components/Header/Top-header/Header";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { CatalogPage } from "./pages/CatalogPage/CatalogPage";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
+import { CartPage } from "./pages/CartPage/CartPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/books" element={<CatalogPage />} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

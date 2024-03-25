@@ -1,5 +1,4 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Top-header/Header";
 import { HomePage } from "./pages/HomePage/HomePage";
@@ -15,7 +14,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/books" element={<CatalogPage />} />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="/not-found" element={<ErrorPage />} />
+        <Route path="*" element={<Navigate to="/not-found" />} />
       </Routes>
       <Footer />
     </>

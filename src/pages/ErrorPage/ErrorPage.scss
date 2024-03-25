@@ -1,0 +1,16 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #302d2d;
+  min-height: 80vh;
+
+  &__title {
+    font-size: 35px;
+  }
+
+  &__text {
+    font-size: 25px;
+  }
+}

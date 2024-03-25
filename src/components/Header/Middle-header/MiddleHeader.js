@@ -8,7 +8,7 @@ import { faShoppingBasket, faSearch } from "@fortawesome/free-solid-svg-icons";
 export const MiddleHeader = () => {
   return (
     <div className="middle-header">
-      <div className="middle-header__avatar"></div>
+      <Link to="/"><div className="middle-header__avatar"></div></Link>
       <div className="middle-header__search">
         <input
           type="text"

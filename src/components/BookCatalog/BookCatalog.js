@@ -1,9 +1,18 @@
 import "./BookCatalog.scss";
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { useGetAllBooksQuery } from "../../features/booksApi";
+import { addToCart } from "../../features/cartSlice";
 
 export const BookCatalog = () => {
   const { data, error, isLoading } = useGetAllBooksQuery();
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (event, book) => {
+    event.preventDefault();
+    dispatch(addToCart(book));
+  };
+
   return (
     <>
       <div className="catalog-navigation">
@@ -32,7 +41,11 @@ export const BookCatalog = () => {
               <h4 className="catalog__title">{book.title}</h4>
               <div className="catalog__author">{book.author}</div>
               <div className="catalog__price">{book.price}</div>
-              <a href="/" className="catalog__button">
+              <a
+                href="/"
+                className="catalog__button"
+                onClick={(event) => handleAddToCart(event, book)}
+              >
                 Add to cart
               </a>
             </div>

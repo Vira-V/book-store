@@ -5,11 +5,11 @@ import "./MenuHeader.scss";
 export const MenuHeader = () => {
   const menuItems = [
     { label: "Home", path: "/" },
-    { label: "About us", path: "#" },
+    { label: "About us", path: "/#" },
     { label: "Books", path: "/books" },
-    { label: "New release", path: "#" },
-    { label: "Contact us", path: "#" },
-    { label: "Blog", path: "#" },
+    { label: "New release", path: "/#" },
+    { label: "Contact us", path: "/#" },
+    { label: "Blog", path: "/#" },
   ];
 
   const [activeMenuItem, setActiveMenuItem] = useState("Home");
@@ -28,7 +28,7 @@ export const MenuHeader = () => {
             onClick={() => handleMenuItemClick(label)}
           >
             {path === "/" || path === "/books" ? (
-              <NavLink to={path} activeClassName="active">
+              <NavLink to={path} activeclassname="active">
                 {label}
               </NavLink>
             ) : (

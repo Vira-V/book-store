@@ -7,10 +7,12 @@ import { Provider } from "react-redux";
 
 import booksReducer, { booksFetch } from "./features/booksSlice";
 import { booksApi } from "./features/booksApi";
+import cartReducer from "./features/cartSlice";
 
 const store = configureStore({
   reducer: {
     books: booksReducer,
+    cart: cartReducer,
     [booksApi.reducerPath]: booksApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
